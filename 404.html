@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Redirect to index.html when a 404 occurs
+        sessionStorage.redirect = location.href;
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; URL='index.html'">
+    </noscript>
+</head>
+<body>
+    <script>
+        (function(){
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replace(redirect);
+            }
+        }())
+    </script>
+</body>
+</html>

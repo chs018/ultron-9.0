@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRON 9.0 - Futurix Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-deep-stone text-ash-white pixel-font">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">FUTURIX</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="events.html" class="nav-link">EXPLORE</a></li>
+                <li><a href="upcoming-events.html" class="nav-link">UPCOMING</a></li>
+                <li><a href="contributors.html" class="nav-link">TEAM</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="registration.html" class="nav-link">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="minecraft-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">ULTRON 9.0</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">POWERED BY FUTURIX</p>
+            
+            <div class="cta-buttons">
+                <a href="events.html" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="400">
+                    EXPLORE EVENTS
+                </a>
+                <a href="upcoming-events.html" class="btn btn-secondary" data-aos="zoom-in" data-aos-delay="600">
+                    UPCOMING HACKATHON
+                </a>
+                <a href="contact.html" class="btn btn-tertiary" data-aos="zoom-in" data-aos-delay="800">
+                    JOIN FUTURIX
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Blocks -->
+        <div class="floating-blocks">
+            <div class="block block-grass"></div>
+            <div class="block block-dirt"></div>
+            <div class="block block-stone"></div>
+            <div class="block block-sky"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title" data-aos="fade-up">WHY JOIN FUTURIX?</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="zoom-in">
+                <div class="feature-icon">⚙️</div>
+                <h3>BUILD SKILLS</h3>
+                <p>Learn cutting-edge technologies</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-icon">🏆</div>
+                <h3>WIN PRIZES</h3>
+                <p>Compete & showcase your talent</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="feature-icon">🤝</div>
+                <h3>NETWORK</h3>
+                <p>Connect with tech enthusiasts</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="feature-icon">🚀</div>
+                <h3>INNOVATE</h3>
+                <p>Create amazing projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Game Section -->
+    <section class="mini-game-section">
+        <h2 class="section-title" data-aos="fade-up">PLAY MINECRAFT BLOCK BREAKER</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">CLICK BLOCKS TO MINE & EARN POINTS!</p>
+        
+        <div class="mini-game-container">
+            <!-- Game Stats -->
+            <div class="game-stats-mini" data-aos="fade-down">
+                <div class="stat-item-mini">
+                    <span class="stat-label">SCORE:</span>
+                    <span class="stat-value" id="miniScore">0</span>
+                </div>
+                <div class="stat-item-mini">
+                    <span class="stat-label">BLOCKS:</span>
+                    <span class="stat-value" id="miniBlocks">0</span>
+                </div>
+            </div>
+
+            <!-- Mini Game Grid -->
+            <div class="mini-game-canvas" data-aos="zoom-in">
+                <div class="mini-game-grid" id="miniGameGrid">
+                    <!-- Blocks will be generated here -->
+                </div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="mini-game-controls" data-aos="fade-up">
+                <button class="btn btn-primary" id="miniStartBtn">START MINING</button>
+                <button class="btn btn-secondary" id="miniResetBtn">RESET</button>
+            </div>
+
+            <!-- Quick Instructions -->
+            <div class="mini-instructions" data-aos="fade-up">
+                <p>🎮 Click blocks to mine them! 🟩 Grass=10pts | 🟫 Dirt=15pts | ⬜ Stone=20pts | 💎 Diamond=50pts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FUTURIX. ALL RIGHTS RESERVED. | ULTRON 9.0</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+        </div>
+    </footer>
+
+    <script src="transitions.js"></script>
+    <script src="main.js"></script>
+    <script src="mini-game.js"></script>
+</body>
+</html>

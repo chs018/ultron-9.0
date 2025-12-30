@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - ULTRON 9.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-deep-stone text-ash-white pixel-font">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">FUTURIX</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="events.html" class="nav-link">EXPLORE</a></li>
+                <li><a href="upcoming-events.html" class="nav-link active">UPCOMING</a></li>
+                <li><a href="contributors.html" class="nav-link">TEAM</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="registration.html" class="nav-link">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <h1 class="page-title" data-aos="fade-up">UPCOMING HACKATHON</h1>
+        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">GET READY FOR ULTRON 9.0</p>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <h2 class="section-title" data-aos="fade-up">EVENT STARTS IN</h2>
+        <div class="countdown" id="countdown">
+            <div class="countdown-item">
+                <div class="countdown-value">00</div>
+                <div class="countdown-label">DAYS</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value">00</div>
+                <div class="countdown-label">HOURS</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value">00</div>
+                <div class="countdown-label">MINUTES</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value">00</div>
+                <div class="countdown-label">SECONDS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details">
+        <div class="details-container">
+            <div class="detail-card" data-aos="fade-right">
+                <h3 class="detail-title">📍 LOCATION</h3>
+                <p class="detail-text">College Auditorium & Online</p>
+            </div>
+            <div class="detail-card" data-aos="fade-up">
+                <h3 class="detail-title">📅 DATE</h3>
+                <p class="detail-text">January 1-2, 2025</p>
+            </div>
+            <div class="detail-card" data-aos="fade-left">
+                <h3 class="detail-title">🎯 DURATION</h3>
+                <p class="detail-text">24 Hours Non-Stop</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <section class="tracks-section">
+        <h2 class="section-title" data-aos="fade-up">COMPETITION TRACKS</h2>
+        <div class="tracks-grid">
+            <div class="track-card" data-aos="zoom-in">
+                <h3 class="track-title">💻 WEB DEVELOPMENT</h3>
+                <p class="track-desc">Build innovative web applications using modern frameworks and technologies.</p>
+                <ul class="track-items">
+                    <li>🔹 React/Vue/Angular</li>
+                    <li>🔹 Full Stack Dev</li>
+                    <li>🔹 Web3 Apps</li>
+                </ul>
+            </div>
+            <div class="track-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="track-title">📱 MOBILE APP</h3>
+                <p class="track-desc">Create powerful mobile applications for iOS and Android platforms.</p>
+                <ul class="track-items">
+                    <li>🔹 React Native</li>
+                    <li>🔹 Flutter</li>
+                    <li>🔹 Native Apps</li>
+                </ul>
+            </div>
+            <div class="track-card" data-aos="zoom-in" data-aos-delay="400">
+                <h3 class="track-title">🤖 AI/ML</h3>
+                <p class="track-desc">Harness AI and machine learning to solve real-world problems.</p>
+                <ul class="track-items">
+                    <li>🔹 Deep Learning</li>
+                    <li>🔹 NLP Models</li>
+                    <li>🔹 Data Science</li>
+                </ul>
+            </div>
+            <div class="track-card" data-aos="zoom-in" data-aos-delay="600">
+                <h3 class="track-title">🎨 DESIGN</h3>
+                <p class="track-desc">Showcase exceptional UI/UX design skills with pixel-perfect creations.</p>
+                <ul class="track-items">
+                    <li>🔹 UI/UX Design</li>
+                    <li>🔹 Graphic Design</li>
+                    <li>🔹 Motion Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules & Guidelines -->
+    <section class="rules-section">
+        <h2 class="section-title" data-aos="fade-up">RULES & GUIDELINES</h2>
+        <div class="rules-grid">
+            <div class="rule-card" data-aos="fade-up">
+                <h4 class="rule-number">01</h4>
+                <p class="rule-text">Teams can have 1-4 members. Individual submissions are welcome.</p>
+            </div>
+            <div class="rule-card" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="rule-number">02</h4>
+                <p class="rule-text">Project must be original work created during the hackathon.</p>
+            </div>
+            <div class="rule-card" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="rule-number">03</h4>
+                <p class="rule-text">Source code must be open-sourced on GitHub with MIT license.</p>
+            </div>
+            <div class="rule-card" data-aos="fade-up" data-aos-delay="600">
+                <h4 class="rule-number">04</h4>
+                <p class="rule-text">Submission deadline is January 17 at 2:00 PM IST.</p>
+            </div>
+            <div class="rule-card" data-aos="fade-up" data-aos-delay="800">
+                <h4 class="rule-number">05</h4>
+                <p class="rule-text">Judging based on innovation, execution, and impact.</p>
+            </div>
+            <div class="rule-card" data-aos="fade-up" data-aos-delay="1000">
+                <h4 class="rule-number">06</h4>
+                <p class="rule-text">Winners will be announced on January 18, 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2 class="cta-title" data-aos="fade-up">READY TO PARTICIPATE?</h2>
+        <button class="btn btn-primary large" data-aos="zoom-in" data-aos-delay="200">REGISTER NOW</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FUTURIX. ALL RIGHTS RESERVED. | ULTRON 9.0</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+        </div>
+    </footer>
+
+    <script src="transitions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

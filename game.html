@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Game - ULTRON 9.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-deep-stone text-ash-white pixel-font">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">FUTURIX</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="events.html" class="nav-link">EXPLORE</a></li>
+                <li><a href="upcoming-events.html" class="nav-link">UPCOMING</a></li>
+                <li><a href="contributors.html" class="nav-link">TEAM</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="registration.html" class="nav-link">REGISTER</a></li>
+                <li><a href="game.html" class="nav-link active">GAME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <h1 class="page-title" data-aos="fade-up">MINECRAFT BLOCK BREAKER</h1>
+        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">CLICK TO MINE BLOCKS & EARN POINTS!</p>
+    </section>
+
+    <!-- Game Section -->
+    <section class="game-section">
+        <div class="game-container">
+            <!-- Game Stats -->
+            <div class="game-stats" data-aos="fade-down">
+                <div class="stat-item">
+                    <span class="stat-label">SCORE:</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">BLOCKS:</span>
+                    <span class="stat-value" id="blocks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">TIME:</span>
+                    <span class="stat-value" id="timer">00:00</span>
+                </div>
+            </div>
+
+            <!-- Block Type Selector -->
+            <div class="block-selector" data-aos="fade-right">
+                <h3 class="selector-title">SELECT BLOCK TYPE:</h3>
+                <div class="block-options">
+                    <button class="block-option active" data-block="grass" title="Grass (10 pts)">
+                        <div class="block-preview block-grass"></div>
+                        <span>GRASS</span>
+                    </button>
+                    <button class="block-option" data-block="dirt" title="Dirt (15 pts)">
+                        <div class="block-preview block-dirt"></div>
+                        <span>DIRT</span>
+                    </button>
+                    <button class="block-option" data-block="stone" title="Stone (20 pts)">
+                        <div class="block-preview block-stone"></div>
+                        <span>STONE</span>
+                    </button>
+                    <button class="block-option" data-block="diamond" title="Diamond (50 pts)">
+                        <div class="block-preview block-diamond"></div>
+                        <span>DIAMOND</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Game Canvas -->
+            <div class="game-canvas" data-aos="zoom-in">
+                <div class="game-grid" id="gameGrid">
+                    <!-- Blocks will be generated here -->
+                </div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls" data-aos="fade-up">
+                <button class="btn btn-primary" id="startBtn">START GAME</button>
+                <button class="btn btn-secondary" id="resetBtn">RESET</button>
+                <button class="btn btn-tertiary" id="clearBtn">CLEAR GRID</button>
+            </div>
+
+            <!-- Instructions -->
+            <div class="game-instructions" data-aos="fade-up">
+                <h3 class="instructions-title">HOW TO PLAY:</h3>
+                <ul class="instructions-list">
+                    <li>🎮 Click blocks to mine them and earn points</li>
+                    <li>⚡ Different blocks give different points</li>
+                    <li>💎 Diamond blocks are worth the most!</li>
+                    <li>🏗️ Build mode: Click empty spaces to place blocks</li>
+                    <li>⏱️ Track your time and try to beat your high score!</li>
+                </ul>
+            </div>
+
+            <!-- High Score -->
+            <div class="high-score-board" data-aos="fade-up">
+                <h3 class="high-score-title">HIGH SCORE: <span id="highScore">0</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FUTURIX. ALL RIGHTS RESERVED. | ULTRON 9.0</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+        </div>
+    </footer>
+
+    <script src="transitions.js"></script>
+    <script src="main.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

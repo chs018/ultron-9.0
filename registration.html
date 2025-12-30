@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - ULTRON 9.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-deep-stone text-ash-white pixel-font">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">FUTURIX</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="events.html" class="nav-link">EXPLORE</a></li>
+                <li><a href="upcoming-events.html" class="nav-link">UPCOMING</a></li>
+                <li><a href="contributors.html" class="nav-link">TEAM</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="registration.html" class="nav-link active">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <h1 class="page-title" data-aos="fade-up">REGISTER FOR ULTRON 9.0</h1>
+        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">JOIN THE ULTIMATE HACKATHON EXPERIENCE</p>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+        <div class="registration-container">
+            <div class="registration-info" data-aos="fade-right">
+                <h2 class="section-title">EVENT DETAILS</h2>
+                <div class="info-box">
+                    <div class="info-item">
+                        <span class="info-icon">📅</span>
+                        <div>
+                            <h3>Date</h3>
+                            <p>January 1-2, 2025</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <h3>Duration</h3>
+                            <p>24 Hours Non-Stop</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>College Auditorium & Online</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🏆</span>
+                        <div>
+                            <h3>Prizes</h3>
+                            <p>Worth ₹50,000+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration-perks">
+                    <h3 class="perks-title">WHAT YOU GET</h3>
+                    <ul class="perks-list">
+                        <li>🎯 Free Swag & Goodies</li>
+                        <li>🍕 Food & Refreshments</li>
+                        <li>🤝 Mentorship from Experts</li>
+                        <li>📜 Participation Certificate</li>
+                        <li>🎁 Exciting Prizes</li>
+                        <li>🌐 Networking Opportunities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="registration-form-wrapper" data-aos="fade-left">
+                <h2 class="form-title">REGISTRATION FORM</h2>
+                <form class="registration-form" id="registrationForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">PERSONAL INFORMATION</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">FULL NAME *</label>
+                            <input type="text" name="fullName" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">EMAIL *</label>
+                            <input type="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">PHONE *</label>
+                                <input type="tel" name="phone" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">GENDER</label>
+                                <select name="gender" class="form-input">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">ACADEMIC INFORMATION</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">COLLEGE/UNIVERSITY *</label>
+                            <input type="text" name="college" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">BRANCH *</label>
+                                <input type="text" name="branch" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">YEAR *</label>
+                                <select name="year" class="form-input" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1st Year</option>
+                                    <option value="2">2nd Year</option>
+                                    <option value="3">3rd Year</option>
+                                    <option value="4">4th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">TEAM INFORMATION</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">TEAM NAME *</label>
+                            <input type="text" name="teamName" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">TEAM SIZE *</label>
+                            <select name="teamSize" class="form-input" required>
+                                <option value="">Select</option>
+                                <option value="1">Solo (1 member)</option>
+                                <option value="2">2 members</option>
+                                <option value="3">3 members</option>
+                                <option value="4">4 members</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">TEAM MEMBERS (Names separated by commas)</label>
+                            <textarea name="teamMembers" class="form-textarea" rows="3" placeholder="e.g., John Doe, Jane Smith"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Track Selection -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">COMPETITION TRACK *</h3>
+                        
+                        <div class="form-group">
+                            <label class="radio-group">
+                                <input type="radio" name="track" value="web" required>
+                                <span class="radio-label">💻 Web Development</span>
+                            </label>
+                            <label class="radio-group">
+                                <input type="radio" name="track" value="mobile" required>
+                                <span class="radio-label">📱 Mobile App Development</span>
+                            </label>
+                            <label class="radio-group">
+                                <input type="radio" name="track" value="ai" required>
+                                <span class="radio-label">🤖 AI/ML</span>
+                            </label>
+                            <label class="radio-group">
+                                <input type="radio" name="track" value="design" required>
+                                <span class="radio-label">🎨 Design</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">ADDITIONAL INFORMATION</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label">DIETARY PREFERENCES</label>
+                            <select name="diet" class="form-input">
+                                <option value="">Select</option>
+                                <option value="veg">Vegetarian</option>
+                                <option value="non-veg">Non-Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">HOW DID YOU HEAR ABOUT US?</label>
+                            <select name="source" class="form-input">
+                                <option value="">Select</option>
+                                <option value="social">Social Media</option>
+                                <option value="friend">Friend</option>
+                                <option value="college">College Notice</option>
+                                <option value="website">Website</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">SPECIAL REQUIREMENTS/COMMENTS</label>
+                            <textarea name="comments" class="form-textarea" rows="4" placeholder="Any special requirements or additional information..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="form-section">
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkbox-label">I agree to the terms and conditions *</span>
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="updates">
+                            <span class="checkbox-label">I want to receive updates about future events</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">SUBMIT REGISTRATION</button>
+                </form>
+
+                <div class="form-note">
+                    <p>* Required fields</p>
+                    <p>Having trouble? <a href="contact.html" class="link-inline">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FUTURIX. ALL RIGHTS RESERVED. | ULTRON 9.0</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">🐦</a>
+        </div>
+    </footer>
+
+    <script src="transitions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
